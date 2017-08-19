@@ -1,0 +1,24 @@
+{
+  "name": "twitter-widget",
+  "version": "0.1.0",
+  "description": "twitter widget",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naznadmn/twitter-widget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naznadmn/twitter-widget/issues"
+  },
+  "homepage": "https://github.com/naznadmn/twitter-widget#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3",
+    "twitter-stream-api": "^0.5.1"
+  }
+}

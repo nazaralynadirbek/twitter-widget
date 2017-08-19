@@ -1,0 +1,86 @@
+// out: ../css/desktop.css
+
+@base: rgb(107, 107, 107);
+
+.container {
+    width: 420px;
+    margin: 0 auto;
+
+    .top {
+        padding: 40px 0;
+
+        .title {
+            color: @base;
+            font-size: 12px;
+            text-align: center;
+
+            h1 {
+                font-weight: normal;
+            }
+        }
+    }
+    .bottom {
+        .tweets {
+            .tweet {
+                padding: 10px;
+                margin-bottom: 10px;
+                background: rgb(255, 255, 255);
+
+                .top,
+                .bottom {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .left,
+                .right {
+                    float: left;
+                }
+
+                .left {
+                    width: 48px;
+                    margin-right: 10px;
+
+                    .photo {
+                        width: 48px;
+                        height: 48px;
+                        overflow: hidden;
+                        border-radius: 99px;
+                    }
+                }
+                .right {
+                    width: 342px;
+
+                    .top {
+                        margin-bottom: 10px;
+                    }
+
+                    .comment {
+                        font-size: 16px;
+                    }
+                    .date {
+                        color: @base;
+                        font-size: 14px;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    clear: both;
+                    display: block;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .tweet-transition-enter {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            .tweet-transition-enter-active,
+            .tweet-transition-leave-active {
+                transition: all 1s
+            }
+        }
+    }
+}

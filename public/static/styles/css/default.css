@@ -1,0 +1,15 @@
+html, body, h1, h2, h3, h4, h5, h6, ul, li, a, p, img {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: rgb(234, 238, 243);
+    font-family: 'Source Sans Pro', sans-serif;
+}

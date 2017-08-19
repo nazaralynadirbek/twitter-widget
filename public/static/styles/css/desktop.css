@@ -1,0 +1,68 @@
+.container {
+  width: 420px;
+  margin: 0 auto;
+}
+.container .top {
+  padding: 40px 0;
+}
+.container .top .title {
+  color: #6b6b6b;
+  font-size: 12px;
+  text-align: center;
+}
+.container .top .title h1 {
+  font-weight: normal;
+}
+.container .bottom .tweets .tweet {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+.container .bottom .tweets .tweet .top,
+.container .bottom .tweets .tweet .bottom {
+  margin: 0;
+  padding: 0;
+}
+.container .bottom .tweets .tweet .left,
+.container .bottom .tweets .tweet .right {
+  float: left;
+}
+.container .bottom .tweets .tweet .left {
+  width: 48px;
+  margin-right: 10px;
+}
+.container .bottom .tweets .tweet .left .photo {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 99px;
+}
+.container .bottom .tweets .tweet .right {
+  width: 342px;
+}
+.container .bottom .tweets .tweet .right .top {
+  margin-bottom: 10px;
+}
+.container .bottom .tweets .tweet .right .comment {
+  font-size: 16px;
+}
+.container .bottom .tweets .tweet .right .date {
+  color: #6b6b6b;
+  font-size: 14px;
+}
+.container .bottom .tweets .tweet:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.container .bottom .tweets .tweet:last-child {
+  margin-bottom: 0;
+}
+.container .bottom .tweets .tweet-transition-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.container .bottom .tweets .tweet-transition-enter-active,
+.container .bottom .tweets .tweet-transition-leave-active {
+  transition: all 1s;
+}
