@@ -24,7 +24,7 @@
                 <div class="bottom">
                     <div class="tweets">
                         <transition-group name="tweet-transition" tag="div">
-                            <div class="tweet" v-for="(tweet, index) in tweets" v-bind:key="index">
+                            <div class="tweet" v-for="tweet in tweets" v-bind:key="tweet.id_str">
                                 <div class="left">
                                     <div class="photo">
                                         <img :src="tweet.user.profile_image_url" alt="">
@@ -33,12 +33,12 @@
                                 <div class="right">
                                     <div class="top">
                                         <div class="comment">
-                                            <p>{{ tweet.text }}</p>
+                                            <p v-html="$options.filters.highlight(tweet.text)"></p>
                                         </div>
                                     </div>
                                     <div class="bottom">
                                         <div class="date">
-                                            <span>{{ tweet.created_at }}</span>
+                                            <span>{{ tweet.created_at | format }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -52,6 +52,6 @@
         <!-- Scripts -->
         <script src="https://unpkg.com/vue"></script>
         <script src="/socket.io/socket.io.js"></script>
-        <script src="/scripts/main.js"></script>
+        <script src="/scripts/build.js"></script>
     </body>
 </html>

@@ -46,6 +46,9 @@
 .container .bottom .tweets .tweet .right .comment {
   font-size: 16px;
 }
+.container .bottom .tweets .tweet .right .comment span {
+  font-weight: bold;
+}
 .container .bottom .tweets .tweet .right .date {
   color: #6b6b6b;
   font-size: 14px;
@@ -61,6 +64,9 @@
 .container .bottom .tweets .tweet-transition-enter {
   opacity: 0;
   transform: translateY(30px);
+}
+.container .bottom .tweets .tweet-transition-leave-to {
+  opacity: 0;
 }
 .container .bottom .tweets .tweet-transition-enter-active,
 .container .bottom .tweets .tweet-transition-leave-active {

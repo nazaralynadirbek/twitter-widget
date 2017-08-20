@@ -57,6 +57,10 @@
 
                     .comment {
                         font-size: 16px;
+
+                        span {
+                            font-weight: bold;
+                        }
                     }
                     .date {
                         color: @base;
@@ -76,6 +80,9 @@
             .tweet-transition-enter {
                 opacity: 0;
                 transform: translateY(30px);
+            }
+            .tweet-transition-leave-to {
+                opacity: 0;
             }
             .tweet-transition-enter-active,
             .tweet-transition-leave-active {

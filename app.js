@@ -18,10 +18,10 @@ app.get('/', function(request, response) {
 
 // Twitter
 var keys = {
-    consumer_key: '',
-    consumer_secret: '',
-    token: '',
-    token_secret: ''
+    consumer_key: '57YQm5EmhO7qJpsSjofIKhlwe',
+    consumer_secret: 'mIyRRpfKJgVzkDbb2i0PmoLqkPUGaS0CgMSdmOT5VUsDJzCBOH',
+    token: '898905100932009984-9aCvImgECSaUGLFMQqL36rVUNAUTm3v',
+    token_secret: '2x7EeSSJT966rkaQnYcW7Bu830vk6AZcH6om1UdxMKk6H'
 };
 
 var Twitter = new TwitterStream(keys, false);
