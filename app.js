@@ -2,6 +2,7 @@ var express = require('express');
 var app     = express();
 var server  = require('http').Server(app);
 var io      = require('socket.io')(server);
+var config  = require('./config');
 
 var TwitterStream = require('twitter-stream-api');
 
@@ -17,16 +18,9 @@ app.get('/', function(request, response) {
 });
 
 // Twitter
-var keys = {
-    consumer_key: '',
-    consumer_secret: '',
-    token: '',
-    token_secret: ''
-};
-
-var Twitter = new TwitterStream(keys, false);
+var Twitter = new TwitterStream(config.twitter, false);
 Twitter.stream('statuses/filter', {
-    track: ''
+    track: 'что'
 });
 
 // Socket

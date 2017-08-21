@@ -61,12 +61,17 @@
 .container .bottom .tweets .tweet:last-child {
   margin-bottom: 0;
 }
+.container .bottom .tweets .tweet:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 30px #d4d4d4;
+}
 .container .bottom .tweets .tweet-transition-enter {
   opacity: 0;
   transform: translateY(30px);
 }
 .container .bottom .tweets .tweet-transition-leave-to {
   opacity: 0;
+  transform: translateY(-30px);
 }
 .container .bottom .tweets .tweet-transition-enter-active,
 .container .bottom .tweets .tweet-transition-leave-active {
